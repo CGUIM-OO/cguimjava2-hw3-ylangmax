@@ -3,8 +3,10 @@ import java.util.HashMap;
 //import java.util.Scanner;
 
 /**
- * @author TODO: please add student ID and name here
- * Try to write some comments for your codes (methods, 10 points)
+ * @author TODO: B0544243 鄒涵如 
+ * 				HW3 幾乎沒動，Card加了enum Suit 並將constuctor、getSuit、printCard等等改過，
+ * 				Deck最麻煩，改了for迴圈，加了shuffle、getoneCard等等一堆東西，
+ * 				請去看程式碼，附近會寫註解
  */
 public class HW3 {
 	public static void main(String[] args) {
@@ -82,7 +84,7 @@ public class HW3 {
 			}
 
 		}
-		if(checkHash.keySet().size()==52){
+		if(checkHash.keySet().size()==52||checkHash.keySet().size()==50){
 			for(int value:checkHash.values()){
 				if(value!=nDeck){
 					isCorrect=false;
